@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiPark.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+            <Image Source="logoh4g.png" WidthRequest="200" HeightRequest="100" HorizontalOptions="Center" Aspect="AspectFit"/>
+            <HorizontalStackLayout Spacing="10">
+                <CheckBox x:Name="themeToggleCheckBox" CheckedChanged="OnThemeToggleCheckBoxCheckedChanged" />
+                <Label Text="Cambiar Tema"/>
+            </HorizontalStackLayout>
+            <Frame BorderColor="Gray" CornerRadius="5" Padding="0" BackgroundColor="#F1F1F1">
+                <Frame.Triggers>
+                    <DataTrigger TargetType="Frame" Binding="{AppThemeBinding Dark=True, Light=False}" Value="True">
+                        <Setter Property="BackgroundColor" Value="#333333" />
+                    </DataTrigger>
+                </Frame.Triggers>
+                <Entry x:Name="usernameEntry" Placeholder="Correo Eletronico"/>
+            </Frame>
+
+            <Frame BorderColor="Gray" CornerRadius="5" Padding="0" BackgroundColor="#F1F1F1">
+                <Frame.Triggers>
+                    <DataTrigger TargetType="Frame" Binding="{AppThemeBinding Dark=True, Light=False}" Value="True">
+                        <Setter Property="BackgroundColor" Value="#333333" />
+                    </DataTrigger>
+                </Frame.Triggers>
+                <Entry x:Name="passwordEntry" Placeholder="Contrasena" IsPassword="true"/>
+            </Frame>
+            <HorizontalStackLayout Spacing="10">
+                <CheckBox x:Name="saveCredentialsCheckBox" />
+                <Label Text="Guardar credenciales"/>
+            </HorizontalStackLayout>
+            <Button Text="Iniciar sesión" Clicked="OnLoginClicked"/>
+            <Button Text="Registrarse" Clicked="OnRegisterClicked"/>
+            <Button Text="Ver Usuarios Registrados" Clicked="OnViewRegisteredUsersClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
+

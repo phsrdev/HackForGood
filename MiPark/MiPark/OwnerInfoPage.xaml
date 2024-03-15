@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiPark.OwnerInfoPage"
+             Title="Informações do Proprietário">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Label x:Name="nameLabel" FontSize="Medium"/>
+            <Label x:Name="emailLabel" FontSize="Medium"/>
+            <Label x:Name="ibanLabel" FontSize="Medium"/>
+            <Label Text="Garagens Registradas:" FontSize="Medium" FontAttributes="Bold"/>
+
+            <CollectionView x:Name="garagesCollectionView" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Street}" FontSize="Small"/>
+                            <Label Text="{Binding City}" FontSize="Small"/>
+                            <!-- Adicione mais detalhes conforme necessário -->
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

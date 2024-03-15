@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiPark.ParkInfo"
+             Title="Informações da Garagem">
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+            <Label x:Name="addressLabel" Text="Endereço" FontAttributes="Bold"/>
+            <Label x:Name="cityLabel" Text="Cidade"/>
+            <Label x:Name="zipCodeLabel" Text="Código Postal"/>
+            <Label Text="Selecione os dias disponíveis:"/>
+            <DatePicker x:Name="availabilityDatePicker"/>
+            <Label Text="Selecione os horários disponíveis:"/>
+            <TimePicker x:Name="startTimePicker" Format="HH:mm"/>
+            <TimePicker x:Name="endTimePicker" Format="HH:mm"/>
+            <Button Text="Salvar Disponibilidade" Clicked="OnSaveAvailabilityClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

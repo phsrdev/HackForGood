@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiPark.DashboardPage"
+             Title="Dashboard">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <Label x:Name="welcomeLabel" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" 
+                   Text="¡Bienvenido!"/>
+
+            <Label Text="Dashboard" 
+                   FontSize="32" 
+                   HorizontalOptions="Center" />
+
+            <Frame CornerRadius="10" Padding="15" HorizontalOptions="FillAndExpand">
+                <VerticalStackLayout>
+                    <Label Text="Reservas Atuais" 
+                           FontAttributes="Bold" 
+                           HorizontalOptions="Start"/>
+                    <CollectionView x:Name="currentBookingsCollectionView" 
+                                    HeightRequest="150">
+                    </CollectionView>
+                </VerticalStackLayout>
+            </Frame>
+            <Button Text="Registrar Garagem" Clicked="OnRegisterGarageClicked" Style="{StaticResource PrimaryButton}"/>
+            <Button Text="Informações Pessoais" Clicked="OnPersonalInfoClicked" Style="{StaticResource PrimaryButton}"/>
+            <Button Text="Gerenciar Garagem" Clicked="OnManageGarageClicked" Style="{StaticResource PrimaryButton}"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
