@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiPark.ClientAreaPage"
+             Title="Área del Cliente">
+    <ScrollView>
+        <VerticalStackLayout Spacing="25" Padding="30" VerticalOptions="Start" HorizontalOptions="FillAndExpand">
+            <Label x:Name="WelcomeMessage" 
+                   Text="¡Bienvenido a la Área del Cliente de MiPark!"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+            <Button Text="Registrar Vehículo" Clicked="OnRegisterVehicleClicked"/>
+            <Button Text="Buscar Garagens" Clicked="OnSearchGaragesClicked"/>
+            <Button Text="Deslogar" Clicked="OnLogoutClicked" VerticalOptions="EndAndExpand"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
