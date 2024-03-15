@@ -28,10 +28,44 @@ Desarrollado durante el hackathon HackForGood, el proyecto MiPark aspira a resol
 2. **Sugerir Mejoras:** ¿Tienes una idea para mejorar MiPark? ¡Compártela con nosotros!
 3. **Desarrollar:** Haz fork del repositorio y crea un Pull Request con tus mejoras.
 
+## Instalación
+
+1. Clona el repositorio:
+
+   ```
+   https://github.com/phsrdev/HackForGood.git
+2. Asegúrate de tener instalados los siguientes requisitos previos:
+
+- [Xamarin](https://dotnet.microsoft.com/en-us/apps/xamarin)
+- [Visual Studio](https://visualstudio.microsoft.com)
+- [.NET MAUI](https://dotnet.microsoft.com/en-us/apps/maui)
+
+
 ## Licencia
 
 MiPark se distribuye bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
+**Herramientas utilizadas**
+
+![Xamarin](https://img.shields.io/badge/Xamarin-3199DC?style=for-the-badge&logo=xamarin&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white)
+![vstudio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
+
+<br>
+
+
+
 ---
 
 Desarrollado con ❤️ por el equipo de HackForGood.
+
+
+_Juan Gorostiza (Designer)_ <br>
+_Andre Martin (Designer)_ <br>
+_Pedro Rodrigues (Programador)_ <br>
+_Lucas Barreiro (Programador)_ <br>
